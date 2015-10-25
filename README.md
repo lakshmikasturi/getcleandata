@@ -1,4 +1,7 @@
 # getcleandata
+Title: Readme file for the run_analysis program
+Author: Lakshmi Kasturi
+Date: 10/25/2015
 This repo is created for "tidying data" project assignment
 Part-1 Download and read data
 i. Check for data directory and create "M" directory if it doesn't exist

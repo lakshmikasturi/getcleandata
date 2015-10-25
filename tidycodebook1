@@ -1,3 +1,6 @@
+title: Code book for run_analysis
+author: Lakshmi Kasturi
+date: 10/25/2015
 This is a code book for the run_analysis.R program for performing cleaning and tidying analysis on raw data.
 data1 - Main directory in which the raw data of UCI_HAR_data is stored.
 UCI_HAR_data - The unzipped folder containing the raw data.
