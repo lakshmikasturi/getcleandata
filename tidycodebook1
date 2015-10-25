@@ -1,0 +1,30 @@
+This is a code book for the run_analysis.R program for performing cleaning and tidying analysis on raw data.
+data1 - Main directory in which the raw data of UCI_HAR_data is stored.
+UCI_HAR_data - The unzipped folder containing the raw data.
+training.x - It contains the X_train.txt data.
+training.y - It contains the y_train.txt data.
+training.subject - It contains the subject_train.txt data.
+test.x - It contains the X_test.txt data.
+test.y - It contains the y_test.txt data.
+test.subject - It contains the subject_test.txt data.
+merge1.x - It contains merged X_train and X_test data.
+merge1.y - It contains merged y_train and y_test data.
+merge1.subject - It contains merged subject_train and subject_test data.
+dataframe1 - The 3 raw datasets: merge1.x, merge1.y, merge1.subject are merged into a single dataframe.
+features - It stores the features.txt file containing the names of the 561 features of a particular subject from merge1.subject.
+            who is performing a particular activity from merge1.y.
+mean.col - It stores the variable names containing the string "mean()".
+std.col - It stores the variable names containing the string "std()".
+edf - Dataframe containing the extracted mean and std values.
+colnames(edf)[67] and [68] rename them as "activity.name" and "person.id" respectively.
+Assign descriptive names to activities in the column activity.name of dataframe "edf".
+1 <-"WALKING"
+2 <-"WALKING_UPSTAIRS"
+3 <-"WALKING_DOWNSTAIRS"
+4 <-"SITTING"
+5 <-"STANDING"
+6 <-"LAYING"
+Remove special characters "-" and "()" from the variable names using gsub and sub.
+Convert all variable names to lowercase using tolower function.
+tidy.datframe - It is the final, independent, tidyied dataframe containing the average of each variable for each activity performed by each subject.
+UCI_HAR_tidy.txt - The tidy.dataframe is written to this text file.
